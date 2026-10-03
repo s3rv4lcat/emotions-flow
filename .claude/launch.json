@@ -1,0 +1,11 @@
+﻿{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "emotions-flow",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "7788", "--directory", "C:/Users/Korisnik.DESKTOP-VI25QAU/Desktop/emotions-flow"],
+      "port": 7788
+    }
+  ]
+}
