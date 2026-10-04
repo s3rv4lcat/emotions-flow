@@ -112,9 +112,6 @@ nav {
   display: flex;
   gap: 2.4rem;
   list-style: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .nav-links a {
@@ -147,27 +144,6 @@ nav {
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-cta:hover { opacity: 0.85; transform: translateY(-1px); }
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.nav-socials {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin-right: 0.4rem;
-  padding-right: 1rem;
-  border-right: 1px solid var(--border);
-}
-.nav-social {
-  display: flex;
-  align-items: center;
-  color: var(--muted);
-  transition: color 0.25s ease;
-}
-.nav-social:hover { color: var(--gold2); }
 
 /* ── LANG SWITCH ── */
 .lang-switch {
@@ -798,10 +774,10 @@ section, .services, .courses, .about-wrap, .contact {
 
 /* ── FOOTER ── */
 footer {
-  padding: 1.8rem 3rem;
+  padding: 2.5rem 3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
   background: var(--bg);
@@ -918,7 +894,7 @@ footer {
 
 @media (max-width: 680px) {
   nav { padding: 1rem 1.2rem; }
-  .nav-links, .nav-right { display: none; }
+  .nav-links, .nav-cta, .lang-switch { display: none; }
   .hamburger {
     display: flex;
     flex-direction: column;
