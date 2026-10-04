@@ -135,18 +135,18 @@ let running = false, phaseIdx = 0, timer = null, cdTimer = null;
 function applyPhase(idx) {
   const p = phases[idx];
   labelEl.textContent = p.label;
-  countEl.textContent = p.duration;
+  countEl.textContent = '1';
   bubble.style.transition = `transform ${p.duration}s cubic-bezier(0.4, 0, 0.2, 1)`;
   bubble.style.transform  = `scale(${p.scale})`;
-  bubble.style.boxShadow  = idx < 2
+  bubble.style.boxShadow  = idx === 0
     ? '0 0 60px rgba(196,150,58,0.30), 0 0 120px rgba(196,150,58,0.12), inset 0 1px 0 rgba(255,255,255,0.4)'
     : '0 0 30px rgba(196,150,58,0.18), inset 0 1px 0 rgba(255,255,255,0.3)';
 }
 
 function startCd(dur) {
   clearInterval(cdTimer);
-  let r = dur;
-  cdTimer = setInterval(() => { r--; if (r > 0) countEl.textContent = r; }, 1000);
+  let r = 1;
+  cdTimer = setInterval(() => { r++; if (r <= dur) countEl.textContent = r; }, 1000);
 }
 
 function nextPhase() {
