@@ -192,9 +192,9 @@ nav {
 .lang-btn.is-active { color: var(--gold2); pointer-events: none; }
 .lang-btn:not(.is-active):hover { color: var(--gold2); }
 .lang-sep { font-size: 0.6rem; color: var(--border); }
-.mobile-lang {
+.mobile-socials {
   display: flex;
-  gap: 0.6rem;
+  gap: 1.6rem;
   align-items: center;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
@@ -202,6 +202,8 @@ nav {
   width: 100%;
   justify-content: center;
 }
+.mobile-socials .nav-social { color: var(--muted); }
+.mobile-socials .nav-social svg { width: 22px; height: 22px; }
 
 /* hamburger */
 .hamburger { display: none; }
@@ -918,7 +920,8 @@ footer {
 
 @media (max-width: 680px) {
   nav { padding: 1rem 1.2rem; }
-  .nav-links, .nav-right { display: none; }
+  .nav-links, .nav-socials, .nav-cta { display: none; }
+  .nav-right { gap: 0.5rem; }
   .hamburger {
     display: flex;
     flex-direction: column;
