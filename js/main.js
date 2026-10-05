@@ -258,10 +258,32 @@ revealEls.forEach(el => observer.observe(el));
 }());
 
 // ── CONTACT FORM ──
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('button');
-  btn.textContent = T.submittedLabel;
-  btn.style.opacity = '0.7';
-  setTimeout(() => { btn.textContent = T.submitLabel; btn.style.opacity = ''; e.target.reset(); }, 3000);
+  const form = e.target;
+  const btn  = form.querySelector('button');
+  const successEl = document.getElementById('contactSuccess');
+  const sendingLabel = LANG === 'sr' ? 'Šalje se…'              : 'Sending…';
+  const errorLabel   = LANG === 'sr' ? 'Greška — pokušaj ponovo' : 'Error — try again';
+
+  btn.disabled    = true;
+  btn.textContent = sendingLabel;
+
+  try {
+    const res = await fetch('https://formspree.io/f/mjygvnvj', {
+      method:  'POST',
+      body:    new FormData(form),
+      headers: { 'Accept': 'application/json' },
+    });
+    if (res.ok) {
+      form.style.display    = 'none';
+      successEl.style.display = 'block';
+    } else {
+      btn.textContent = errorLabel;
+      btn.disabled    = false;
+    }
+  } catch {
+    btn.textContent = errorLabel;
+    btn.disabled    = false;
+  }
 }

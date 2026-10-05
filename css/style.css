@@ -755,7 +755,7 @@ section, .services, .courses, .about-wrap, .contact {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 440px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: left;
 }
@@ -797,6 +797,21 @@ section, .services, .courses, .about-wrap, .contact {
   transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form button:hover { opacity: 0.85; transform: translateY(-1px); }
+.contact-form button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+.contact-success {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding: 1.5rem 2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.95rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
 
 /* ── FOOTER ── */
 footer {

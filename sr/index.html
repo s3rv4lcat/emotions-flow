@@ -366,11 +366,14 @@
     </a>
   </div>
   <form class="contact-form reveal" onsubmit="handleSubmit(event)">
-    <input type="text" placeholder="Ime" required>
-    <input type="email" placeholder="Email" required>
-    <textarea rows="4" placeholder="Kratko mi reci šta te dovodi…"></textarea>
+    <input type="text" name="name" placeholder="Ime" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" rows="4" placeholder="Kratko mi reci šta te dovodi…"></textarea>
     <button type="submit">Pošalji poruku</button>
   </form>
+  <div class="contact-success" id="contactSuccess" style="display:none">
+    Hvala! Poruka je primljena — javiću ti se uskoro. 🌿
+  </div>
 </section>
 
 <!-- FOOTER -->

@@ -364,11 +364,14 @@
     </a>
   </div>
   <form class="contact-form reveal" onsubmit="handleSubmit(event)">
-    <input type="text" placeholder="Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea rows="4" placeholder="Tell me briefly what brings you…"></textarea>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" rows="4" placeholder="Tell me briefly what brings you…"></textarea>
     <button type="submit">Send message</button>
   </form>
+  <div class="contact-success" id="contactSuccess" style="display:none">
+    Thank you! Your message has been received — I'll be in touch soon. 🌿
+  </div>
 </section>
 
 <!-- FOOTER -->
