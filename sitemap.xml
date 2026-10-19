@@ -3,30 +3,30 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://emotionsflow.rs/</loc>
+    <loc>https://emotions-flow.com/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <url>
-    <loc>https://emotionsflow.rs/sr/</loc>
+    <loc>https://emotions-flow.com/sr/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://emotionsflow.rs/sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://emotionsflow.rs/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://emotionsflow.rs/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://emotions-flow.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emotions-flow.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emotions-flow.com/"/>
   </url>
 
   <url>
-    <loc>https://emotionsflow.rs/en/</loc>
+    <loc>https://emotions-flow.com/en/</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://emotionsflow.rs/sr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://emotionsflow.rs/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://emotionsflow.rs/"/>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://emotions-flow.com/sr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://emotions-flow.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://emotions-flow.com/"/>
   </url>
 
 </urlset>
